@@ -1,0 +1,91 @@
+/* !Global */
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  background-color: black;
+}
+
+
+ .FormTextColor{
+  color: #02d502;
+}
+
+.FormBgColor{
+  background-color: #222222;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.w-35{
+  width: 35%;
+}
+
+.p-7 {
+  padding: 5rem !important;
+}
+
+/* *section */
+.btn-outline-success {
+  --bs-btn-active-bg: #22ba73;
+}
+section .container input:focus{
+  border-color: rgb(34, 185, 115);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(34, 185, 115, 0.25);
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-top: -32px;
+    margin-left: -50px;
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+  }
+.row:nth-child(even) {
+  margin-left: 2px;
+}
+
+.hexagon {
+  position: relative;
+  height: 110px;
+  width: 100px;
+  background: #111;
+  margin: 1px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 2s;
+}
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.hexagon:hover {
+  transition: 0s;
+  background: #0f0;
+  cursor: alias;
+}
+
+
+
+
+
+
+.max-vw-100{
+  max-width: 80vw;
+}
